@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document List</h1>
+    <ul>
+        {% for document in documents %}
+            <li>
+                <h2>{{ document.title }}</h2>
+                <p>Image: <img src="{{ document.image.url }}" alt="{{ document.title }}"></p>
+                <p>PDF: <a href="{{ document.pdf.url }}">Download PDF</a></p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'upload_document' %}">Upload New Document</a>
+    
+</body>
+</html>

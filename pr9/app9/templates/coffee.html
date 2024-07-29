@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="/static/work.css?{% now "U" %}">
+    
+</head>
+<style>
+    body{
+        background-color:lightgray;
+    }
+     .about-content h2{
+        color: black;
+        margin-left: 35rem;
+        margin-top: 3rem;
+        font-size: 25px;
+        font-family: Arial;
+        font-weight: bold;
+        transition: .5s ease-in;
+    }
+    #about{
+        background-color: thistle;
+    }
+    .about-content h2:hover{
+        color: tomato;
+    }
+    .about-content img{
+       border-radius: 50px;
+        margin-top: 10px;
+        margin-left: 50px;
+        float: left;
+    } 
+    .about-content h5 {
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        margin-left:10px;
+        text-align: center;
+    }
+.about-content p{
+    margin: 10px;
+    margin-left: 600px;
+    margin-right: 150px;
+    justify-content: center;
+}
+
+   
+
+#footer{
+    background-color: gray;
+    display: flex;
+    padding: 20px;
+}
+.foot{
+    margin: 20px;
+    top: 20px;
+    padding: 40px;
+}
+
+#footer h6{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 25px;
+}
+#footer p{
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+#footer .icons {
+    position: relative;
+    justify-content:space-between;
+    margin-left: 10px;
+    margin: 10px;
+}
+.foot0{
+    max-width: 200px;
+    margin-left: 40px;
+}
+.foot1{
+    margin-left: 60px;
+}
+.foot li{
+    margin-left: 70px;
+}
+.foot2{
+    margin-left: 80px;
+}
+.foot3{
+    margin-left: 140px;
+}
+.foot ul{
+    margin-left: 20px;
+}
+tr{
+    width: 25px;
+    
+}
+#footer h6:hover{
+    color: tomato;
+}
+.icons i{
+    margin: 10px;
+    
+    transition: .5s ease-in;
+}
+.icons i:hover{
+    transform: scale(1.5);
+    color: tomato;
+}
+
+
+
+
+
+
+
+</style>
+<body >
+<div class="bg" style="background-size: 200vh;  background-image:url({% static 'coffee.jpg' %}); background-color: rgba(8, 8, 8, 0.486); ">
+    <header>
+    <div class="navbar">
+        <a class="logo" href="">Coffee</a>
+        <nav>
+            <ul>
+            <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Service</a></li>
+             <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="para">
+        <h3>A Day To Start With A <span>Cofeee</span></h3>
+        <p><span>Coffee </span>is a beloved beverage known for its ability to fine-tune your focus and boost your energy levels</p>
+        <p>Love in Every<span>Sip</span></p>
+    </div>
+    <button id="btn"><a href="#">OrderNow</a></button>
+</main>
+</div>
+</div>
+<div id="content">
+    <div id="con">
+    <form class="grp">
+        <table>
+        <h4>Login Here</h4>
+        
+        <tr>
+        <td><label>Username</label></td>
+        <td><input type="text" placeholder="Enter the Username" id="Username" value="Username"></td>
+    </tr>
+    <tr>
+        <td><label>Password</label></td>
+       <td><input type="password" placeholder="Enter the password" id="Password" value="password"></td>
+    </tr>
+    <tr>
+        <td></td>
+       <td>Forget Password?</td>
+    </tr>
+    <tr>
+
+        <td colspan="2" > <button class="btn1" style="margin-left:50px;">Login</button></td>
+    </tr>
+    </table>
+    </form>
+    <form class="grp1">
+        <table>
+        <h4>Register Here</h4>
+        
+        <tr>
+        <td><label>Username</label></td>
+        <td><input type="text" placeholder="Enter the Username" id="Username" value="Username"></td>
+    </tr>
+    <tr>
+        <td><label>EmailId</label></td>
+        <td><input type="email" placeholder="Enter the EmailId" id="EmailId" value="EmailId"></td>
+    </tr>
+    <tr>
+        <td><label>Password</label></td>
+       <td><input type="password" placeholder="Enter the password" id="Password" value="password"></td>
+    </tr>
+    <tr>
+        <td></td>
+       <td>Forget Password?</td>
+    </tr>
+    <tr>
+<td colspan="2" > <button class="btn1" style="margin-left:50px;">Register</button></td>
+    </tr>
+    </table>
+    </form>
+</div>
+</div>
+<section id="about">
+    <div class="about-content">
+        <h2>About</h2>
+        <div><img src="{% static 'about.jpeg' %}" alt=""></div>
+    <h5> Popular Drink Made From Roasted <span>Coffee Beans.</span></h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis atque est sequi harum quas a quis ea mollitia hic distinctio? Similique dignissimos quia omnis consectetur asperiores impedit sapiente quam perspiciatis?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ullam, natus rem nulla repudiandae dicta unde, beatae quam quisquam et autem cum? Neque et itaque molestiae vero nemo ullam atque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor doloremque nostrum officia inventore ad error ex optio illo. Adipisci assumenda fuga cumque esse amet accusantium quos cupiditate ab explicabo!</p>
+   
+    </div>
+</section>
+<section id="footer">
+   
+    <div class="foot0">
+    <h6>Coffee Shop</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus autem perspiciatis iste, vel quam ipsa dolorem consequatur accusamus, libero laboriosam incidunt, ipsum omnis iusto blanditiis dolorum sint corporis voluptas? Nostrum.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</div>
+    <div class="foot1">
+        <h6>Support</h6>
+        <ul>
+        <li>Product</li>
+        <li>Help & Support</li>
+        <li>Return Policy</li>
+        <li>Terms of Use</li>
+        <li>Product</li>
+    </ul>
+    </div>
+    <div class="foot2">
+        <h6>View Guides</h6>
+        <ul>
+        <li>Features</li>
+        <li>Careers</li>
+        <li>Blog Posts</li>
+        <li>Our Branches</li>
+    </ul>
+    </div>
+    <div class="foot3">
+        <h6>Contact</h6>
+        
+        <i class="fa-solid fa-location-dot">&nbsp;&nbsp;250 NEW City,Mayiladuthurai</i><br>
+        <i class="fa-solid fa-phone">&nbsp;&nbsp;9876543210</i><br>
+        <i class="fa-solid fa-envelopes-bulk">&nbsp;&nbsp;Coffee@shop.com</i>
+        
+    </div>
+
+</section>
+
+
+    
+
+
+</body>
+</html>
